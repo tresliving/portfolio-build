@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+/* .border {
+  border: 1px solid gray;
+}
+.border-danger {
+  border: 1px solid red;
+}
+.border-success {
+  border: 1px solid green;
+}
+.border-primary {
+  border: 1px solid blue;
+} */
+
+.container {
+  max-width: 1650px;
+  padding: 0 0.7rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contact_parent {
+  width: 100%;
+}
+
+/* right side */
+.Bio_section {
+  width: 100%;
+}
+.imgWrapper {
+  padding: 3rem;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 11rem;
+}
+.paragraph_section {
+  padding: 0 7rem;
+}
+.img_paragraph {
+  word-spacing: 4px;
+}
+.img_paragraph {
+  font-family: "Oswald", sans-serif;
+}
+/* right side end */
+
+/* left side */
+.formHead {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+}
+.formWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.name_input label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+.name_input input {
+  width: 100%;
+  border-radius: 0;
+  padding: 1.1rem 0;
+  border: 1px solid #999;
+  margin-bottom: 3rem;
+}
+.text_Area label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+.text_Area textarea {
+  width: 100%;
+  border-radius: 0;
+  padding: 1.1rem 0;
+  border: 1px solid #999;
+  margin-bottom: 3rem;
+}
+.buttonWrapper {
+  text-align: center;
+}
+.submitBtn {
+  border: 1px solid #343434;
+  background-color: #343434;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 3rem;
+  padding: 0.5rem 3.5rem;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  margin-bottom: 3rem;
+}
+.submitBtn:hover {
+  background-color: transparent;
+  color: #343434;
+  cursor: pointer;
+}
+/* left side end */
+
+@media only screen and (max-width: 1200px) {
+  .paragraph_section {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .formWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link src="script.js"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Portfolio Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="text">
+          <h1>"TRES-tuhn"</h1>
+        </div>
+        <div class="logo_section">
+          <div class="logo_1">
+            <img src="imges/spotify.png" class="img_1" />
+          </div>
+          <div class="logo_2">
+            <img src="imges/behance (1).png" class="img_1" />
+          </div>
+          <div class="logo_3">
+            <img src="imges/linkedin.png" class="img_1" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="parent_paragraph max-width">
+          <div class="paragraph">
+            <p>Developer, designer, and photographer</p>
+            <p>based in Florida producing global results.</p>
+        </div>
+      </div>
+        <!-- link section -->
+        <div class="footer">
+          <ul class="li_flexbox">
+            <li><a href="Gallery.html"><span>GALLERY</span></a></li>
+            <li><a href="work.html"><span>WORK</span></a></li>
+            <li><a href="Blog.html"><span>BLOG</span></a></li>
+            <li><a href="bio.html"><span>BIO/CONTACT</span></a></li>
+          </ul>
+        </div>  
+        <div id="preview-container">
+          <div id="gallery-preview" class="preview">Gallery Content</div>
+          <div id="work-preview" class="preview">Work Content</div>
+          <div id="blog-preview" class="preview">Blog Content</div>
+          <div id="bio-preview" class="preview">Bio/Contact Content</div>
+        </div>      
+    </div>
+  </body>
+  <script>
+    $(document).ready(function() {
+    // Function to load content into the preview box
+    function loadContent(url) {
+      $.ajax({
+        url: url,
+        success: function(data) {
+          // Load data into preview box and show it
+          $('#preview-box').html(data).fadeIn();
+        },
+        error: function() {
+          // Handle errors, for instance, show a message
+          $('#preview-box').html('<p>Error loading content.</p>').fadeIn();
+        }
+      });
+    }
+  
+    // Event handlers for hover
+    $('#gallery-link').hover(function() {
+      loadContent('Gallery.html');
+    }, function() {
+      $('#preview-box').fadeOut(); // Hide on mouse out
+    });
+  
+    $('#work-link').hover(function() {
+      loadContent('work.html');
+    }, function() {
+      $('#preview-box').fadeOut();
+    });
+  
+    $('#blog-link').hover(function() {
+      loadContent('Blog.html');
+    }, function() {
+      $('#preview-box').fadeOut();
+    });
+  
+    $('#bio-link').hover(function() {
+      loadContent('bio.html');
+    }, function() {
+      $('#preview-box').fadeOut();
+    });
+  });
+  </script>
+
+</html>

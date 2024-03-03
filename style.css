@@ -1,0 +1,335 @@
+/* //////Home page css start from here */
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.img_1 {
+  height: 35px;
+  width: 35px;
+}
+.logo_section {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.header {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_1 {
+  /* border: 2px solid red; */
+}
+.logo_2 {
+  /* border: 2px solid blue; */
+  margin-left: 18px;
+}
+.logo_3 {
+  /* border: 2px solid green; */
+  margin-left: 18px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .img_1 {
+    height: 35px;
+    width: 35px;
+  }
+  .logo_section {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+  }
+  .header {
+    /* border: 2px solid blue; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_1 {
+    /* border: 2px solid red; */
+  }
+  .logo_2 {
+    /* border: 2px solid blue; */
+    margin-left: 18px;
+  }
+  .logo_3 {
+    /* border: 2px solid green; */
+    margin-left: 18px;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .img_1 {
+    height: 35px;
+    width: 35px;
+  }
+  .logo_section {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+  }
+  .header {
+    /* border: 2px solid blue; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_1 {
+    /* border: 2px solid red; */
+  }
+  .logo_2 {
+    /* border: 2px solid blue; */
+    margin-left: 22px;
+  }
+  .logo_3 {
+    /* border: 2px solid green; */
+    margin-left: 22px;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .img_1 {
+    height: 35px;
+    width: 35px;
+  }
+  .logo_section {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+  }
+  .header {
+    /* border: 2px solid blue; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_1 {
+    /* border: 2px solid red; */
+  }
+  .logo_2 {
+    /* border: 2px solid blue; */
+    margin-left: 22px;
+  }
+  .logo_3 {
+    /* border: 2px solid green; */
+    margin-left: 22px;
+  }
+  .text {
+    text-align: center;
+  }
+}
+/* Paragraph section start from here */
+
+/* general classes */
+.border {
+  border: 1px solid gray;
+}
+.border-danger {
+  border: 1px solid red;
+}
+.border-success {
+  border: 1px solid green;
+}
+.border-primary {
+  border: 1px solid blue;
+}
+/* general classes end */
+
+/* abdullah code */
+
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+.max-width {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+.parent_paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+}
+.paragraph {
+  width: 100%;
+  text-align: center;
+}
+.paragraph p {
+  color: #800000;
+  font-size: 4rem;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+}
+
+#preview-container {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60%;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 20px;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.preview {
+  display: none;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1500px) {
+  .paragraph p {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .paragraph p {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .paragraph p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .paragraph p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .paragraph p {
+    font-size: 1rem;
+  }
+}
+/* link section start from here */
+.footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 20px 0; /* Adjust padding as necessary */
+}
+
+.li_flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adjust the gap to your preference */
+  list-style: none;
+  padding: 0; /* Remove default padding */
+}
+
+.li_flexbox li {
+  position: relative; /* Needed to position the pseudo-element */
+}
+
+.li_flexbox a {
+  text-decoration: none; /* Remove the underline */
+  color: black; /* Set the text color */
+  font-size: 18px; /* Adjust font size as necessary */
+  text-transform: uppercase; /* Uppercase the text */
+  display: inline-block; /* Allows the control of span dimensions */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.li_flexbox a:hover {
+  color: grey; /* Change text color on hover */
+}
+
+.li_flexbox a span {
+  position: relative;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.li_flexbox a::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Full width of the link */
+  height: 2px; /* Thickness of the strikethrough line */
+  background-color: black; /* Color of the strikethrough line */
+  top: 50%; /* Position at the middle of the text */
+  left: 0;
+  transform: scaleX(0); /* Start with the line scaled to 0 */
+  transform-origin: left; /* Scale from the left */
+  transition: transform 0.3s; /* Smooth transition for the line */
+}
+
+.li_flexbox a:hover::after {
+  transform: scaleX(1); /* Scale the line to full width on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 588px) {
+  .li_flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 498px) {
+  .li_flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}
+@media (max-width: 474px) {
+  .li_flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 430px) {
+  .li_flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 388px) {
+  .li_flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0 auto;
+  }
+}

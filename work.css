@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+  column-gap: 100px;
+  row-gap: 75px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo_1 {
+  height: 150px;
+  width: 150px;
+}
+.text {
+  text-align: center !important;
+}
+
+/* Responsive layout for medium-sized screens */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Responsive layout for small-sized screens */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+/* Additional styles for larger screens (optional) */
+@media screen and (min-width: 1200px) {
+  /* Add styles for larger screens if needed */
+}
+
+/* Additional styles for extra-large screens (optional) */
+@media screen and (min-width: 1600px) {
+  /* Add styles for extra-large screens if needed */
+}

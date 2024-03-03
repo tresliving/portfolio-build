@@ -1,0 +1,93 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+  column-gap: 100px;
+  row-gap: 75px;
+}
+
+.grid-item {
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo_1 {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-fit: fill;
+  object-fit: contain;
+}
+.logo_2 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.logo_3 {
+  height: 200px;
+  width: 80%;
+  object-fit: cover;
+}
+.logo_4 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.logo_5 {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.logo_6 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.text {
+  text-align: center !important;
+}
+
+.carousel-container {
+  max-width: 60%; /* Adjust based on desired maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px 0; /* Optional: Adds some space above and below the carousel */
+}
+
+.carousel img {
+  width: auto; /* Maintain original image width */
+  max-width: 100%; /* Ensure it fits within the container */
+  height: auto; /* Maintain original image height */
+  margin: 0 auto; /* Center the image if it's smaller than container */
+}
+
+
+/* Responsive layout for medium-sized screens */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+    column-gap: 70px;
+    row-gap: 55px;
+  }
+}
+
+/* Responsive layout for small-sized screens */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto;
+    column-gap: 50px !important;
+    row-gap: 20px;
+  }
+}
+
+/* Additional styles for larger screens (optional) */
+@media screen and (min-width: 1200px) {
+  /* Add styles for larger screens if needed */
+}
+
+/* Additional styles for extra-large screens (optional) */
+@media screen and (min-width: 1600px) {
+  /* Add styles for extra-large screens if needed */
+}
